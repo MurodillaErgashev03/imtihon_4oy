@@ -1,0 +1,501 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik";
+}
+
+.container {
+  max-width: 1280px;
+}
+
+.login__body {
+  background-image: url(../../img/login_back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login__block {
+  max-width: 300px;
+  margin-top: 198px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.username__input {
+  margin-top: 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 300px;
+  height: 45px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  background-color: inherit;
+  text-transform: uppercase;
+}
+
+.password__input {
+  margin-top: 35px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 300px;
+  height: 45px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  background-color: inherit;
+  text-transform: uppercase;
+}
+
+.login__btn {
+  margin-top: 55px;
+  width: 300px;
+  height: 45px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0D75FF;
+}
+
+.user__block::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: flex;
+  background-image: url(../../img/user.svg);
+  background-size: contain;
+  margin-top: -32px;
+  margin-left: 12px;
+}
+
+.password__block::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: flex;
+  background-image: url(../../img/lock.svg);
+  background-size: contain;
+  margin-top: -32px;
+  margin-left: 12px;
+}
+
+.error__message {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+  height: 40px;
+}
+
+.error_username {
+  margin-top: 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 300px;
+  height: 45px;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  background-color: inherit;
+  text-transform: uppercase;
+  border: 1px solid red;
+  box-shadow: 0px 0px 5px 2px red;
+}
+
+.site__header {
+  display: flex;
+  align-items: center;
+  padding: 14px 25px;
+}
+
+.header__input {
+  width: 670px;
+  height: 48px;
+  margin-left: 50px;
+  border: none;
+  background: #F8FAFD;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  outline: none;
+  padding-left: 48px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.24);
+}
+
+.header__form::before {
+  position: absolute;
+  top: 28px;
+  left: 460px;
+  content: "";
+  width: 19px;
+  height: 19px;
+  display: flex;
+  background-image: url(../../img/lupa.svg);
+  background-repeat: no-repeat;
+}
+
+.header__img {
+  margin-left: 105px;
+}
+
+.header__btn {
+  width: 99px;
+  height: 40px;
+  background: #0D75FF;
+  border-radius: 4px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  border: none;
+  margin-left: 15px;
+}
+
+.hero {
+  padding: 11px 41px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222531;
+  margin-left: 265px;
+}
+
+.hero__btn {
+  width: 165px;
+  height: 34px;
+  background: #A6B0C3;
+  border-radius: 4px;
+  border: none;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: right;
+  padding-right: 13px;
+  padding-left: 12px;
+}
+
+.hero__btn::after {
+  position: absolute;
+  top: 91px;
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background-image: url(../../img/calendar.svg);
+  background-repeat: no-repeat;
+}
+
+.bookmarks {
+  display: flex;
+}
+
+.left__big-block {
+  padding: 25px;
+  width: 268px;
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+.left__block-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.left__block-text {
+  margin-top: 5px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155.6%;
+  color: #000000;
+}
+
+.left__block-group {
+  margin-top: 25px;
+}
+
+.left__block-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 218px;
+  background: #dddee1;
+  border-radius: 4px;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+}
+
+.item__box-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  max-height: 40px;
+  max-width: 110px;
+  overflow: hidden;
+}
+
+.item__box-text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+  margin-top: 5px;
+  max-height: 40px;
+  max-width: 110px;
+  overflow: hidden;
+}
+
+.btn-book {
+  border: none;
+  background-color: inherit;
+}
+
+.btn-delete {
+  border: none;
+  background-color: inherit;
+}
+
+.right__big-block {
+  padding: 40px;
+  background-color: #cacdd1;
+}
+
+.right__block-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.right__block-item {
+  padding: 13px 15px 13px 18px;
+  width: 282px;
+  height: 455px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.right__img-box {
+  background: #F8FAFD;
+  border-radius: 5px;
+  padding: 18px 28px 18px 20px;
+}
+
+.right__block-img {
+  width: 201px;
+  height: 200px;
+}
+
+.right__block-title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 19px;
+  margin-bottom: 2px;
+  height: 44px;
+  overflow: hidden;
+}
+
+.right__block-text {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+}
+
+.right__year {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+}
+
+.right__title-block {
+  margin-left: 3px;
+}
+
+.right__book-btn {
+  border: none;
+  width: 120px;
+  height: 37px;
+  background: #FFD80D;
+  border-radius: 4px;
+}
+
+.right__more-btn {
+  width: 120px;
+  height: 37px;
+  background: rgba(13, 117, 255, 0.05);
+  border-radius: 4px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0D75FF;
+  border: none;
+}
+
+.right__btn-block {
+  margin-top: 10px;
+}
+
+.right__read-btn {
+  margin-top: 6px;
+  width: 246px;
+  height: 37px;
+  background: #75828A;
+  border-radius: 4px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  border: none;
+}
+
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+  width: 555px;
+}
+
+.info__img_inner {
+  width: 228px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 51px;
+}
+
+.info__img {
+  width: 100%;
+  height: 100%;
+}
+
+.offcanvas-body {
+  padding: 45px;
+}
+
+.info__text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 170.3%;
+  color: #58667E;
+  margin-bottom: 33px;
+}
+
+.info__inner {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222531;
+  margin-bottom: 21px;
+}
+
+.info__span {
+  background: rgba(13, 117, 255, 0.09);
+  border-radius: 30px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0D75FF;
+  padding: 5px 17px;
+  margin-left: 10px;
+}/*# sourceMappingURL=main.css.map */

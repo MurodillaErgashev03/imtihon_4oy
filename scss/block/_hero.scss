@@ -1,0 +1,49 @@
+.hero {
+    padding: 11px 41px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222531;
+    margin-left: 265px;
+}
+
+.hero__btn {
+    width: 165px;
+    height: 34px;
+    background: #A6B0C3;
+    border-radius: 4px;
+    border: none;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: right;
+    padding-right: 13px;
+    padding-left: 12px;
+   
+}
+.hero__btn::after{
+    position: absolute;
+    top: 91px;
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: flex;
+    background-image: url(../../img/calendar.svg);
+    background-repeat: no-repeat;
+
+}

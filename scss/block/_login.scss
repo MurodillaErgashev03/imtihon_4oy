@@ -1,0 +1,115 @@
+.login__body {
+    background-image: url(../../img/login_back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login__block {
+    max-width: 300px;
+    margin-top: 198px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.username__input {
+    margin-top: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 300px;
+    height: 45px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background-color:inherit;
+    text-transform: uppercase;
+}
+
+.password__input {
+    margin-top: 35px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 300px;
+    height: 45px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background-color: inherit;
+    text-transform: uppercase;
+
+}
+
+.login__btn {
+    margin-top: 55px;
+    width: 300px;
+    height: 45px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0D75FF;
+}
+
+.user__block::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: flex;
+    background-image: url(../../img/user.svg);
+    background-size: contain;
+    margin-top: -32px;
+    margin-left: 12px;
+}
+
+.password__block::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: flex;
+    background-image: url(../../img/lock.svg);
+    background-size: contain;
+    margin-top: -32px;
+    margin-left: 12px;
+}
+
+.error__message{
+    color:red;
+    text-align: center;
+    margin-top: 20px;
+    height: 40px;
+}
+.error_username{
+
+    margin-top: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 300px;
+    height: 45px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background-color:inherit;
+    text-transform: uppercase;
+
+
+    border: 1px solid red;
+    box-shadow: 0px 0px 5px 2px red;
+}

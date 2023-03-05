@@ -1,0 +1,55 @@
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+    width: 555px;
+}
+
+
+.info__img_inner {
+    width: 228px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 51px;
+}
+
+.info__img {
+    width: 100%;
+    height: 100%;
+}
+
+.offcanvas-body {
+    padding: 45px;
+}
+
+.info__text {
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 170.3%;
+    color: #58667E;
+    margin-bottom: 33px;
+}
+
+.info__inner {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222531;
+    margin-bottom: 21px;
+}
+
+.info__span {
+    background: rgba(13, 117, 255, 0.09);
+    border-radius: 30px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0D75FF;
+    padding: 5px 17px; 
+    margin-left: 10px;
+}
