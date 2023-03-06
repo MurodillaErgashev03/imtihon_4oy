@@ -15,6 +15,10 @@ fetch('https://www.googleapis.com/books/v1/volumes?q=java&startIndex=0&maxResult
 
 let token = localStorage.getItem('token');
 
+if (!token) {
+  window.location.href = '../pages/login.html'
+}
+
 logoutBtn.addEventListener('click', () => {
 
   let token = localStorage.getItem('token');
@@ -153,3 +157,9 @@ elPaginationList.innerHTML += `
 })
 
 getData();
+
+
+
+///dalete;
+
+

@@ -258,6 +258,25 @@ body {
   background-repeat: no-repeat;
 }
 
+.hero {
+  margin-top: 20px;
+}
+
+.swiper-slide-img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.swiper-button-prev::after {
+  content: "";
+  color: white;
+}
+
+.swiper-button-next::after {
+  content: "";
+  color: white;
+}
+
 .bookmarks {
   display: flex;
 }
@@ -444,6 +463,10 @@ body {
   line-height: 17px;
   color: #FFFFFF;
   border: none;
+}
+
+.pagination {
+  margin-top: 20px;
 }
 
 .offcanvas.show:not(.hiding), .offcanvas.showing {

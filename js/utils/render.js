@@ -17,11 +17,13 @@ function renderBook(array){
             const elYers = findElement('.right__year', newBooks);
             const bookBtn = findElement('.right__book-btn', newBooks);
             const infoBtn = findElement('#info__btn', newBooks);
+            
            
          
 
             bookBtn.dataset.id = books.id;
             infoBtn.dataset.id = books.id;
+            
             
 
 
