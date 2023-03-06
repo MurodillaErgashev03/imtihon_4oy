@@ -24,10 +24,14 @@
     color: rgba(0, 0, 0, 0.24);
 }
 
+
+.header__form{
+    position: relative;
+}
 .header__form::before {
     position: absolute;
-    top: 28px;
-    left: 460px;
+    top: 15px;
+    left: 65px;
     content: "";
     width: 19px;
     height: 19px;
@@ -37,6 +41,8 @@
 }
 
 .header__img {
+    width: 24px;
+    height: 24px;
     margin-left: 105px;
 }
 

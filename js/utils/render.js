@@ -1,6 +1,7 @@
 let template = document.querySelector("#templete");
-let ul = document.querySelector('.right__block-group')
-const elSpan = findElement('#hero__span')
+let ul = document.querySelector('.right__block-group');
+const elSpan = findElement('#hero__span');
+
 
 function renderBook(array){
     ul.textContent = '';
@@ -17,12 +18,14 @@ function renderBook(array){
             const elYers = findElement('.right__year', newBooks);
             const bookBtn = findElement('.right__book-btn', newBooks);
             const infoBtn = findElement('#info__btn', newBooks);
+            const elInfobtn = findElement('#right__read-btn', newBooks);
             
            
          
 
             bookBtn.dataset.id = books.id;
             infoBtn.dataset.id = books.id;
+            
             
             
 
@@ -37,7 +40,11 @@ function renderBook(array){
             
             
     
-            ul.appendChild(newBooks)
+            ul.appendChild(newBooks);
+
+            elInfobtn.addEventListener('click',()=>{
+                window.location.href = books.volumeInfo.infoLink;
+            })
 
     })
 

@@ -22,7 +22,7 @@
 
   <div class="container">
     <header class="site__header">
-      <img src="./img/logo.black.svg" alt="img">
+      <img id="logo" src="./img/logo.black.svg" alt="img">
       <form class="header__form">
 
         <input class="header__input" type="text" placeholder="Search books">
@@ -44,30 +44,27 @@
   <div class="swiper-wrapper">
    
     <div class="swiper-slide"><img class="swiper-slide-img"
-      src="https://images.uzum.uz/cfg844540v9uauhi0mi0/main_page_banner.jpg"
+      src="./img/photo_2023-03-06_13-47-10.jpg"
       alt="Uzum aksiyalari, mahsulotlar termasi va xabarlari"></div>
 <div class="swiper-slide"><img class="swiper-slide-img"
-      src="https://images.uzum.uz/cfg888idjr2oefduj6n0/main_page_banner.jpg" alt=""></div>
+      src="./img/photo_2023-03-06_13-47-16.jpg" alt=""></div>
 <div class="swiper-slide"><img class="swiper-slide-img"
-      src="https://images.uzum.uz/cfg8522djr2oefduj63g/main_page_banner.jpg"
+      src="./img/photo_2023-03-06_13-47-19.jpg"
       alt="Uzum aksiyalari, mahsulotlar termasi va xabarlari"></div>
 <div class="swiper-slide"><img class="swiper-slide-img"
-      src="https://images.uzum.uz/cfg85ukvutv7dbm929g0/main_page_banner.jpg"
+      src="./img/login_back.jpg"
       alt="Uzum aksiyalari, mahsulotlar termasi va xabarlari"></div>
-<div class="swiper-slide"><img class="swiper-slide-img"
-      src="https://images.uzum.uz/cfg82msvutv7dbm92910/main_page_banner.jpg"
-      alt="Uzum aksiyalari, mahsulotlar termasi va xabarlari"></div>
-   
+
   </div>
   
   <div class="swiper-pagination"></div>
 
   
   <div class="swiper-button-prev">
-    prev
+    <img class="swipwer-buttun-img" src="./img/angle-left.svg" alt="">
   </div>
   <div class="swiper-button-next">
-    next
+    <img class="swipwer-buttun-img" src="./img/angle-right.svg" alt="">
   </div>
 
  
@@ -77,9 +74,13 @@
 
       <section class="hero">
         <h2 class="hero__title">Showing <span id="hero__span"></span> Result(s)</h2>
-        <button class="hero__btn">
-          Order by newest
-        </button>
+        <select id="select-id" class="hero__btn">
+
+          <option id="all" value="all">Order by newest</option>
+          <option id="new" value="new">Eskidan yangiga</option>
+          <option id="old" value="old">Yangidan eskiga</option>
+          
+        </select>
       </section>
 
       <section class="bookmarks">
@@ -129,7 +130,7 @@
      
 
       <template id="templete">
-        <li class="right__block-item">
+        <li id="right__block-item" class="right__block-item">
           <div class="right__img-box">
             <img class="right__block-img" src="./img/phyton.png" alt="">
           </div>
@@ -151,7 +152,7 @@
                         data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">More Info
                       </button>
               
-              <button class="right__read-btn">
+              <button id="right__read-btn" class="right__read-btn">
                 Read
               </button>
             </div>
@@ -212,7 +213,7 @@
           </div>
           <div class="item__box-bottom">
             <button class="btn-book">
-              <img src="./img/book-open.svg" alt="img">
+              <img id="book-img" src="./img/book-open.svg" alt="img">
             </button>
             <button class="btn-delete">
               <img id="btn-delete"  class="delete-img" src="./img/delete.svg" alt="img">
@@ -235,7 +236,7 @@
   <script type="module" src="./js/swiper.js"></script>
   <script src="./js/utils/findElement.js"></script>
   <script src="./js/utils/render.js"></script>
-  
+   <script src="./js/theme.js"></script>
   <script src="./js/bookmarks.js"></script>
   <script src="./js/modal.js"></script>
   <script type="module" src="./js/main.js"></script>

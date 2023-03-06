@@ -4,13 +4,6 @@ let ul = document.querySelector('.right__block-group');
 let template = document.querySelector("#templete");
 
 
-fetch('https://www.googleapis.com/books/v1/volumes?q=java&startIndex=0&maxResults=40')
-  .then((res) => res.json())
-  .then((data) => {
-    // renderBook(data)
-    
-  })
-
 //token
 
 let token = localStorage.getItem('token');
@@ -158,8 +151,28 @@ elPaginationList.innerHTML += `
 
 getData();
 
+// sortlash
+
+// let elNew = findElement('#select-id');
 
 
-///dalete;
+// elNew.addEventListener('change', () => {
+  
+  
+
+//   if(elNew.value == 'new' ){
+   
+//   }
+//   else if(elNew.value == 'all'){
+    
+//   }
+//   else if(elNew.value == 'old'){
+    
+//   }
+
+// })
+
+// https://www.googleapis.com/books/v1/volumes?q=flowers&orderBy=newest&key=KEY
+
 
 

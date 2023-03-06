@@ -1,5 +1,6 @@
-let bookUl = document.querySelector('.left__block-group')
-let bookmarksTempelete = document.querySelector('#book-template')
+let bookUl = document.querySelector('.left__block-group');
+let bookmarksTempelete = document.querySelector('#book-template');
+
 let products = [];
 let arr = [];
 
@@ -24,23 +25,36 @@ fetch('https://www.googleapis.com/books/v1/volumes?q=java&startIndex=0&maxResult
 function bookmarksRender(array) {
     bookUl.textContent = '';
 
-    array.forEach((array)=>{
-
-    
-
-    const newBookmasrks = bookmarksTempelete.content.cloneNode(true);
-    const elText = findElement('#item__box-text', newBookmasrks);
-    const elName = findElement('#item__box-title', newBookmasrks);
-    const deleteBtn = findElement('#btn-delete', newBookmasrks);
-
-    deleteBtn.dataset.id = array.id;
-
-    elText.textContent = array.volumeInfo.authors[0];
-    elName.textContent = array.volumeInfo.title;
+    array.forEach((array) => {
 
 
-    bookUl.appendChild(newBookmasrks)
-})
+
+        const newBookmasrks = bookmarksTempelete.content.cloneNode(true);
+
+
+        const elText = findElement('#item__box-text', newBookmasrks);
+        const elName = findElement('#item__box-title', newBookmasrks);
+        const deleteBtn = findElement('#btn-delete', newBookmasrks);
+        const infoBtn = findElement('#book-img', newBookmasrks);
+       
+     
+     
+
+
+        deleteBtn.dataset.id = array.id;
+
+        elText.textContent = array.volumeInfo.authors[0];
+        elName.textContent = array.volumeInfo.title;
+
+
+        bookUl.appendChild(newBookmasrks);
+
+        infoBtn.addEventListener('click', () => {
+            window.location.href = array.volumeInfo.infoLink;
+        });
+
+
+    })
 
 }
 
@@ -48,7 +62,7 @@ function bookmarksRender(array) {
 
 bookUl.addEventListener('click', (evt) => {
     let target = evt.target;
-   let  arr2 =[];
+    let arr2 = [];
     if (target.id.includes('btn-delete')) {
         const id = target.dataset.id;
         arr.forEach((element) => {
@@ -66,7 +80,7 @@ bookUl.addEventListener('click', (evt) => {
 ul.addEventListener('click', (evt) => {
     let target = evt.target
     if (target.id.includes('right__book-btn')) {
-        
+
         const id = target.dataset.id;
         products.forEach((item) => {
             if (item.id == id) {

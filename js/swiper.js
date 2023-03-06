@@ -8,7 +8,7 @@ const swiper = new Swiper('.swiper', {
      delay:1000,
      autoplay: true,
 
-     effect: 'flip',
+     effect: 'cube',
   
    
     navigation: {

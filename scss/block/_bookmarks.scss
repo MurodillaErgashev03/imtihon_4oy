@@ -6,6 +6,7 @@
 .left__big-block {
     padding: 25px;
     width: 268px;
+    height: 100%;
     // height: 1038px;
     box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
 }
@@ -38,8 +39,7 @@
     align-items: center;
     justify-content: space-between;
     max-width: 218px;
-    background: #dddee1;
-    // #F8FAFD
+    background: #F8FAFD;
     border-radius: 4px;
     padding: 15px 10px;
     margin-bottom: 15px
@@ -107,6 +107,7 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
+
 
 .right__img-box {
     background: #F8FAFD;
