@@ -151,26 +151,12 @@ elPaginationList.addEventListener('click', (evt) => {
 
 getData();
 
-// sortlash
-
-let elNew = findElement('#select-id');
-
-
-elNew.addEventListener('change', () => {
+// search
 
 
 
-  if (elNew.value == 'new') {
-    
-  }
-  else if (elNew.value == 'all') {
+let search = document.querySelector('#search');
 
-  }
-  else if (elNew.value == 'old') {
-
-  }
-
-})
 
 let URL = "https://www.googleapis.com/books/v1/volumes?q=flowers&orderBy=newest&key="
 
@@ -179,17 +165,18 @@ fetch(URL + GOOGLE_API)
   .then((data) => {
   })
 
-  let search = document.querySelector('#search')
 
 search.addEventListener('input',(evt)=>{
 let value = evt.target.value
 fetch(` https://www.googleapis.com/books/v1/volumes?q=${value}&key=` + GOOGLE_API)
   .then((res) => res.json())
   .then((data) => {
-    if(value ==''){
+    if(value == ''){
       renderBook(data)
     }else{
+      
       let result = data.items.filter((product) => {
+         console.log(data.items)
         if (product.id) {
           return product
         }
@@ -200,6 +187,10 @@ fetch(` https://www.googleapis.com/books/v1/volumes?q=${value}&key=` + GOOGLE_AP
   })
 })
 
+
+//sortlash
+
+let elNew = findElement('#select-id');
 
 elNew.addEventListener('change',(evt)=>{
 let value = evt.target.value
@@ -217,6 +208,8 @@ fetch(`https://www.googleapis.com/books/v1/volumes?q=${value}&orderBy=newest&key
   })
 })
 
+
+//delete
 
 
 bookUl.addEventListener('click', (evt) => {
@@ -236,6 +229,8 @@ bookUl.addEventListener('click', (evt) => {
 })
 
 
+//qoshish
+
 ul.addEventListener('click', (evt) => {
   let target = evt.target
   if (target.id.includes('right__book-btn')) {
@@ -253,3 +248,4 @@ ul.addEventListener('click', (evt) => {
       })
   }
 })
+

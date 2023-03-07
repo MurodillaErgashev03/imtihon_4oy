@@ -8,7 +8,7 @@ let elHero = document.querySelector('.hero');
 let rightBlock = document.querySelector('.right__big-block');
 
 
-let moon = document.querySelector('.header__img');
+let moon = document.querySelector('#header__img');
 
 //lightmode
 

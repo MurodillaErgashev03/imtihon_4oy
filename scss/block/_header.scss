@@ -1,11 +1,18 @@
 .site__header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 14px 25px;
+}
+.header__right-block{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header__input {
-    width: 670px;
+    width: 620px;
     height: 48px;
     margin-left: 50px;
     border: none;
@@ -43,7 +50,7 @@
 .header__img {
     width: 24px;
     height: 24px;
-    margin-left: 105px;
+   
 }
 
 .header__btn {
@@ -58,5 +65,72 @@
     line-height: 19px;
     color: #FFFFFF;
     border: none;
-    margin-left: 15px;
+  
+}
+.admin__link{
+    padding: 11px 25px;
+    width: 99px;
+    height: 40px;
+    background: blueviolet;
+    border-radius: 4px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: none;
+}
+
+@media screen and (max-width: 1220px){
+    .header__input{
+        width: 500px;
+    }
+    .header__img{
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .header__input{
+        width: 300px;
+    }
+    .header__img{
+        margin-left: 40px;
+    }
+    .logo{
+        max-width: 150px;
+    }
+}
+@media screen and (max-width: 700px){
+    .header__input{
+        width: 200px;
+    }
+    .header__img{
+        margin-left: 30px;
+    }
+    .header__btn {
+        width: 70px;
+        height: 40px;
+    }
+   
+}
+@media screen and (max-width: 590px){
+    .header__form{
+        display: none;
+    }
+    .header__img{
+        margin-left: 20px;
+    }
+    .header__btn {
+        width: 60px;
+        height: 40px;
+    }
+
+   
+}
+@media screen and (max-width: 300px){
+    .site__header {
+        padding: 14px 10px;
+    } 
 }

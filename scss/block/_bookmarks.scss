@@ -107,6 +107,9 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
+.admin__list{
+    height: 500px;
+}
 
 
 .right__img-box {
@@ -141,6 +144,8 @@
     font-size: 13px;
     line-height: 18px;
     color: #757881;
+    height: 20px;
+    overflow: hidden;
 }
 
 .right__year {
@@ -200,4 +205,32 @@
 
 .pagination{
     margin-top: 20px;
+}
+.edit__btn{
+    margin-top: 5px;
+    width: 120px;
+    height: 37px;
+    background: blue;
+    border-radius: 4px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border: none;
+}
+.delete__btn{
+    margin-top: 5px;
+    width: 120px;
+    height: 37px;
+    background: red;
+    border-radius: 4px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border: none;
 }

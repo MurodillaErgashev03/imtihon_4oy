@@ -1,4 +1,4 @@
-
+let ul = document.querySelector('.right__block-group');
 
 function infoRender(element) {
     

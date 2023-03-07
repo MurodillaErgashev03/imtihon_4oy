@@ -36,7 +36,6 @@ function renderBook(array){
             elName.textContent = books.volumeInfo.title;            
             elAfter.textContent = books.volumeInfo.authors;
             elYears.textContent = books.volumeInfo.publishedDate;
-            console.log(elYears)
             elSpan.textContent = array.length;
             
             
