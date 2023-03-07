@@ -179,9 +179,9 @@ fetch(URL + GOOGLE_API)
   .then((data) => {
   })
 
-  let sarche = document.querySelector('#search')
+  let search = document.querySelector('#search')
 
-sarche.addEventListener('input',(evt)=>{
+search.addEventListener('input',(evt)=>{
 let value = evt.target.value
 fetch(` https://www.googleapis.com/books/v1/volumes?q=${value}&key=` + GOOGLE_API)
   .then((res) => res.json())
@@ -195,7 +195,7 @@ fetch(` https://www.googleapis.com/books/v1/volumes?q=${value}&key=` + GOOGLE_AP
         }
       })
       products = result;
-      renderBook(products)
+      renderBook(products.slice(0,6))
     }
   })
 })

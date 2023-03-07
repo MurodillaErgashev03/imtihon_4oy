@@ -15,7 +15,7 @@ function renderBook(array){
             const elImg = findElement('.right__block-img', newBooks);
             const elName = findElement('.right__block-title', newBooks);
             const elAfter = findElement('.right__block-text', newBooks);
-            const elYers = findElement('.right__year', newBooks);
+            const elYears = findElement('.right__year', newBooks);
             const bookBtn = findElement('.right__book-btn', newBooks);
             const infoBtn = findElement('#info__btn', newBooks);
             const elInfobtn = findElement('#right__read-btn', newBooks);
@@ -35,8 +35,10 @@ function renderBook(array){
             elImg.src = books.volumeInfo.imageLinks.thumbnail;
             elName.textContent = books.volumeInfo.title;            
             elAfter.textContent = books.volumeInfo.authors;
-            elYers.textContent = books.publishedDate;
-            elSpan.textContent = array.length
+            elYears.textContent = books.volumeInfo.publishedDate;
+            console.log(elYears)
+            elSpan.textContent = array.length;
+            
             
             
     
