@@ -60,40 +60,10 @@ function bookmarksRender(array) {
 
 
 
-bookUl.addEventListener('click', (evt) => {
-    let target = evt.target;
-    let arr2 = [];
-    if (target.id.includes('btn-delete')) {
-        const id = target.dataset.id;
-        arr.forEach((element) => {
-            if (element.id !== id) {
-                arr2.push(element)
-            }
-        })
-
-        arr = arr2
-        bookmarksRender(arr2)
-    }
-})
 
 
-ul.addEventListener('click', (evt) => {
-    let target = evt.target
-    if (target.id.includes('right__book-btn')) {
 
-        const id = target.dataset.id;
-        products.forEach((item) => {
-            if (item.id == id) {
-                let product = arr.find((item) => item.id == id);
-                if (!product) {
-                    arr.push(item);
-                }
-            }
-            bookmarksRender(arr)
-            console.log(arr)
-        })
-    }
-})
+
 
 
 

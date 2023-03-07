@@ -34,7 +34,7 @@ function renderBook(array){
     
             elImg.src = books.volumeInfo.imageLinks.thumbnail;
             elName.textContent = books.volumeInfo.title;            
-            elAfter.textContent = books.volumeInfo.authors[0];
+            elAfter.textContent = books.volumeInfo.authors;
             elYers.textContent = books.publishedDate;
             elSpan.textContent = array.length
             

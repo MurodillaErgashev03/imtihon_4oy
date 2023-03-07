@@ -14,11 +14,10 @@ let moon = document.querySelector('.header__img');
 
 let theme = "light";
 
-moon.addEventListener('click', function() {
+moon.addEventListener('click', () => {
 
-    if ( theme === "dark" ) {
-        
-        theme = "light";
+    if ( theme === "light" ) {
+        theme = "dark";
         moon.src = './img/crescent-moon.png';
         elBody.style.background = 'black';
         elLogo.src = './img/logowhite.svg';
@@ -32,9 +31,9 @@ moon.addEventListener('click', function() {
         mainText.style.color = 'white';
 
     }
-    else{
+    else if (theme == "dark"){
         moon.src = './img/quyosh.svg';
-        theme = "dark";
+        theme = "light";
         elBody.style.background = 'white';
         elLogo.src = './img/logo.black.svg';
         heroText.style.color = 'black';
@@ -47,3 +46,4 @@ moon.addEventListener('click', function() {
     }
 
 })
+
