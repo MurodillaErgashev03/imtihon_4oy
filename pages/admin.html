@@ -37,9 +37,9 @@
     </header>
 
     <form class="form-control form" id="add-form">
-      <input name="img" class="form-control input" type="text" placeholder="Img link"> 
-      <input name="job" class="form-control input mt-3" type="text" placeholder="Job"> 
-      <input name="name" class="form-control input mt-3" type="text" placeholder="Name"> 
+      <input id="img__input" name="img" class="form-control input" type="text" placeholder="Img link"> 
+      <input id="job__input" name="job" class="form-control input mt-3" type="text" placeholder="Job"> 
+      <input id="name__input" name="name" class="form-control input mt-3" type="text" placeholder="Name"> 
       
      
       <button id="submit-btn" type="submit" class="btn btn-post btn-outline-primary form-control mt-3">
@@ -152,18 +152,9 @@
               2009
             </p>
             <div class="right__btn-block">
-              <button id="right__book-btn" class="right__book-btn">
-                Bookmark
-              </button>
-              <button class="main__more btn-primary right__more-btn" id="info__btn" type="button"
-                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">More Info
-              </button>
-
-              <button id="right__read-btn" class="right__read-btn">
-                Read
-              </button>
-
-              <button class="edit__btn" >Edit</button>
+             
+              
+            <button class="edit__btn" >Edit</button>
               <button class="delete__btn" >Delete</button>
             </div>
 
@@ -172,44 +163,7 @@
         </li>
       </template>
 
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasRightLabel">Python<h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <div class="info__img_inner">
-            <img class="info__img" id="info__img" src="../img/phyton.png" alt="boock">
-          </div>
-          <div class="info__div">
-
-            <div>
-              <p class="info__text" id="info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Veritatis
-                magnam ad ea non iure culpa quaerat cumque sequi at unde blanditiis velit, impedit
-                eos
-                voluptas explicabo fugit laborum eaque nemo.</p>
-            </div>
-            <div>
-              <h2 class="info__inner">
-                Author : <span class="info__span" id="span">Jamal Kasper</span>
-              </h2>
-              <h2 class="info__inner">
-                Published : <span class="info__span" id="info__namer">2019</span>
-              </h2>
-              <h2 class="info__inner">
-                Publishers: <span class="info__span" id="publishers">Hollman</span>
-              </h2>
-              <h2 class="info__inner">
-                Categories: <span id="categories" class="info__span">Computers</span>
-              </h2>
-              <h2 class="info__inner">
-                Pages Count: <span id="pages" class="info__span">346</span>
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
+  
 
       <template id="book-template">
         <li class="left__block-item">
